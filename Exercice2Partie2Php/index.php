@@ -1,5 +1,6 @@
 <?php
   $isEasy = true;
+  $message = '';
  ?>
 <!doctype html>
 <html lang="fr">
@@ -13,14 +14,15 @@
 <body>
   <h1>Exercice 2 Partie 2 PHP</h1>
   <div class="container">
-    <p>
-      <?php if ($isEasy) {
-      echo "C'est facile";
+    <?php if ($isEasy) {
+      $message = "C'est facile";
     }
     else {
-      echo "C'est difficile";
+      $message = "C'est difficile";
     }
     ?>
+  <p>
+    <?= $message ?>
   </p>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
